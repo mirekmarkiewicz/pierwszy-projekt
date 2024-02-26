@@ -6,13 +6,13 @@ class Program
     {
         int[] tablica = new int[200];
 
-        // Inicjalizacja tablicy wartościami 2137
+        
         for (int i = 0; i < tablica.Length; i++)
         {
             tablica[i] = 2137;
         }
 
-        // Wyświetlanie tablicy w formie tabeli
+        
         for (int i = 0; i < tablica.Length; i++)
         {
             Console.Write($"{tablica[i],-4}");

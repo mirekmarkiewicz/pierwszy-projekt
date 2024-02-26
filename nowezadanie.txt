@@ -1,0 +1,28 @@
+using System;
+
+class Program
+{
+    static void Main()
+
+    {
+
+        int[] tablica = new int[200];
+        for (int i = 0; i < tablica.Length; i++)
+
+        {
+            tablica[i] = 2137;
+        }
+
+
+        for (int i = 0; i < tablica.Length; i++)
+        {
+            Console.Write($"{tablica[i],-5} ");
+            if ((i + 1) % 10 == 0)
+            {
+                Console.WriteLine($"  Wiersz {i / 10 + 1}");
+            }
+        }
+
+        Console.ReadLine();
+    }
+}

@@ -3,23 +3,27 @@ using System;
 class Program
 {
     static void Main()
-
     {
-
         int[] tablica = new int[200];
-        for (int i = 0; i < tablica.Length; i++)
 
+        // Inicjalizacja tablicy wartościami 2137
+        for (int i = 0; i < tablica.Length; i++)
         {
             tablica[i] = 2137;
         }
 
-
+        // Wyświetlanie tablicy w formie tabeli
         for (int i = 0; i < tablica.Length; i++)
         {
-            Console.Write($"{tablica[i],-5} ");
+            Console.Write($"{tablica[i],-4}");
+
             if ((i + 1) % 10 == 0)
             {
-                Console.WriteLine($"  Wiersz {i / 10 + 1}");
+                Console.WriteLine($" Wiersz {i / 10 + 1}");
+            }
+            else
+            {
+                Console.Write(" ");
             }
         }
 

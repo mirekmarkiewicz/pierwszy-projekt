@@ -16,7 +16,7 @@ class Program
 
         for (int i = 0; i < tablica.Length; i++)
         {
-            Console.Write($"{tablica[i],-6} ");
+            Console.Write($"{tablica[i],-5} ");
             if ((i + 1) % 10 == 0)
             {
                 Console.WriteLine($"  Wiersz {i / 10 + 1}");

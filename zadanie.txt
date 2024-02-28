@@ -21,7 +21,7 @@ class Program
             Console.Write($"{tablica[i]}");
 
             if ((i + 1) % 10 == 0)
-                Console.WriteLine($" Wiersz {i / 10 + 1}");
+                Console.WriteLine($"  Wiersz  {i / 10 + 1}");
             else
                 Console.Write("  ");
         }

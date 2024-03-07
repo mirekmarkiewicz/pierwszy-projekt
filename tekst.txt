@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int targetSection = 2;  
+        int currentSection = 1;
+        int moves = 0;
+        int sideLength = 1;
+
+        while (currentSection != targetSection)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                moves++;
+                currentSection += sideLength;
+
+                if (currentSection == targetSection)
+                    break;
+            }
+
+            sideLength++;
+
+            for (int i = 0; i < 2; i++)
+            {
+                moves++;
+                currentSection += sideLength;
+
+                if (currentSection == targetSection)
+                    break;
+            }
+
+            sideLength++;
+        }
+
+        Console.WriteLine($"Liczba ruchów do przejścia z {targetSection} do 1 to {moves}");
+    }
+}
